@@ -50,5 +50,12 @@ export function useProducts() {
         return list
     })
 
-    return { selectedBrands, maxPrice, sort, filtered, sorted }
+    function resetFilters() {
+        selectedBrands.value = []
+        maxPrice.value = 20000
+        sort.value = ''
+        router.replace({ query: {} })
+    }
+
+    return { selectedBrands, maxPrice, sort, filtered, sorted, resetFilters }
 }

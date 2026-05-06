@@ -210,3 +210,14 @@ p {
     }
   }
 }
+.reset-btn {
+  margin-top: 20px;
+  padding: 8px 12px;
+  background: #eee;
+  border: none;
+  cursor: pointer;
+}
+
+.reset-btn:hover {
+  background: #ddd;
+}

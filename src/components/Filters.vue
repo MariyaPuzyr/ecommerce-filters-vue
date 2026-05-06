@@ -4,7 +4,7 @@ const props = defineProps({
     maxPrice: Number,
     sort: String
 })
-const emit = defineEmits(['update:brands', 'update:maxPrice', 'update:sort'])
+const emit = defineEmits(['update:brands', 'update:maxPrice', 'update:sort', 'reset'])
 
 function toggleBrand(e) {
     const value = e.target.value
@@ -45,5 +45,7 @@ function toggleBrand(e) {
             <option value="asc">cheapest</option>
             <option value="desc">expensive</option>
         </select>
+
+        <button class="reset-btn" @click="emit('reset')">Reset</button>
     </aside>
 </template>
