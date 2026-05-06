@@ -13,14 +13,3 @@ defineProps({
         <button @click="addToCart(product)">Add to cart</button>
     </div>
 </template>
-<style scoped>
-.card {
-    border: 1px solid #eee;
-    padding: 12px;
-    transition: .2s;
-}
-
-.card:hover {
-    transform: translateY(-3px);
-}
-</style>
